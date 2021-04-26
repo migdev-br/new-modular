@@ -15,13 +15,13 @@ class _AppWidgetState extends ModularState<AppWidget, AppController>
   void initState() {
     super.initState();
     //Used to disable android back button
-    WidgetsBinding.instance.addObserver(this);
+    WidgetsBinding.instance!.addObserver(this);
   }
 
   @override
   void dispose() {
     //Used to disable android back button
-    WidgetsBinding.instance.removeObserver(this);
+    WidgetsBinding.instance!.removeObserver(this);
 
     super.dispose();
   }
