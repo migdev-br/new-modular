@@ -14,7 +14,7 @@ abstract class _SplashControllerBase with Store {
   @action
   Future<void> getUser() async {
     await Future.delayed(const Duration(milliseconds: 2000), () {});
-    if (hasUser) Modular.to.navigate('start/home');
+    if (hasUser) Modular.to.navigate('start');
     else Modular.to.navigate('login');
   }
 }

@@ -7,7 +7,7 @@ part of 'home_controller.dart';
 // **************************************************************************
 
 final $HomeController = BindInject(
-  (i) => HomeController(startController: i<StartController>()),
+  (i) => HomeController(i<StartController>()),
   isSingleton: true,
   isLazy: true,
 );

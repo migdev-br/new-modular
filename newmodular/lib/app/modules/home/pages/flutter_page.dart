@@ -6,7 +6,7 @@ class FlutterPage extends StatefulWidget {
 
   final HomeController controller;
 
-  const FlutterPage({Key key, this.controller}) : super(key: key);
+  const FlutterPage(this.controller, {Key key}) : super(key: key);
 
   @override
   _FlutterPageState createState() => _FlutterPageState();

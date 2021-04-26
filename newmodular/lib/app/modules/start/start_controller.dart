@@ -16,7 +16,7 @@ abstract class _StartControllerBase with Store {
     currentPage = index;
 
     switch (index) {
-      case 0: Modular.to.navigate('../home');
+      case 0: Modular.to.pushNamed('../home');
         break;
       case 1: Modular.to.pushNamed('../groups');
         break;

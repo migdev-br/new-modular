@@ -16,7 +16,7 @@ class StartModule extends Module {
 
   @override
   final List<ModularRoute> routes = [
-    ChildRoute(Modular.initialRoute, child: (_, args) => StartPage(),
+    ChildRoute(Modular.initialRoute, child: (_, __) => StartPage(),
       children: [
         ModuleRoute('/home', module: HomeModule()),
         ModuleRoute('/groups', module: GroupsModule()),

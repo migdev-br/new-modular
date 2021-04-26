@@ -5,7 +5,7 @@ class SigninPage extends StatefulWidget {
 
   final LoginController controller;
 
-  const SigninPage({Key key, this.controller}) : super(key: key);
+  const SigninPage(this.controller, {Key key}) : super(key: key);
 
   @override
   _SigninPageState createState() => _SigninPageState();

@@ -12,6 +12,6 @@ class GroupsModule extends Module {
 
   @override
   final List<ModularRoute> routes = [
-    ChildRoute(Modular.initialRoute, child: (_, args) => GroupsPage()),
+    ChildRoute(Modular.initialRoute, child: (_, __) => GroupsPage()),
   ];
 }

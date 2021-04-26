@@ -11,7 +11,7 @@ abstract class _HomeControllerBase with Store {
 
   final StartController startController;
 
-  _HomeControllerBase({this.startController});
+  _HomeControllerBase(this.startController);
 
   @action
   void goFlutterPage() {

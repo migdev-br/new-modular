@@ -12,6 +12,6 @@ class SettingsModule extends Module {
 
   @override
   final List<ModularRoute> routes = [
-    ChildRoute(Modular.initialRoute, child: (_, args) => SettingsPage()),
+    ChildRoute(Modular.initialRoute, child: (_, __) => SettingsPage()),
   ];
 }

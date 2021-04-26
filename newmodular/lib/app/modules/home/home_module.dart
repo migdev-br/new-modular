@@ -13,7 +13,7 @@ class HomeModule extends Module {
 
   @override
   final List<ModularRoute> routes = [
-    ChildRoute(Modular.initialRoute, child: (_, args) => HomePage()),
-    ChildRoute('/flutter', child: (_, args) => FlutterPage(controller: Modular.get()))
+    ChildRoute(Modular.initialRoute, child: (_, __) => HomePage()),
+    ChildRoute('/flutter', child: (_, __) => FlutterPage(Modular.get()))
   ];
 }
