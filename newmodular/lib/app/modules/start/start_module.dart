@@ -1,10 +1,10 @@
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:newmodular/app/modules/start/start_controller.dart';
 
 import '../home/home_module.dart';
 import '../groups/groups_module.dart';
 import '../settings/settings_module.dart';
 
-import 'start_controller.dart';
 import 'start_page.dart';
 
 class StartModule extends Module {

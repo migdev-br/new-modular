@@ -37,7 +37,7 @@ class _AppWidgetState extends ModularState<AppWidget, AppController>
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/',
+      initialRoute: Modular.initialRoute,
       debugShowCheckedModeBanner: false,
     ).modular();
   }

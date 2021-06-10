@@ -7,7 +7,8 @@ class SettingsModule extends Module {
   
   @override
   final List<Bind> binds = [
-    $SettingsController,
+    //$SettingsController,
+    Bind.lazySingleton((i) => SettingsController())
   ];
 
   @override

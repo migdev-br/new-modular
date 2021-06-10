@@ -7,7 +7,7 @@ part of 'home_controller.dart';
 // **************************************************************************
 
 final $HomeController = BindInject(
-  (i) => HomeController(i<StartController>()),
+  (i) => HomeController(),
   isSingleton: true,
   isLazy: true,
 );
@@ -28,6 +28,17 @@ mixin _$HomeController on _HomeControllerBase, Store {
         name: '_HomeControllerBase.goFlutterPage');
     try {
       return super.goFlutterPage();
+    } finally {
+      _$_HomeControllerBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void goSubmodule() {
+    final _$actionInfo = _$_HomeControllerBaseActionController.startAction(
+        name: '_HomeControllerBase.goSubmodule');
+    try {
+      return super.goSubmodule();
     } finally {
       _$_HomeControllerBaseActionController.endAction(_$actionInfo);
     }

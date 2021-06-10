@@ -10,6 +10,7 @@ class AppModule extends Module {
   @override
   final List<Bind> binds = [
     $AppController,
+    //Bind.lazySingleton((i) => AppController())
   ];
 
   @override

@@ -9,12 +9,13 @@ class SplashController = _SplashControllerBase with _$SplashController;
 abstract class _SplashControllerBase with Store {
 
   @observable
-  bool hasUser = false; // deixei manual só para testar a navegacao;
+  bool hasUser = true; // deixei manual só para testar a navegacao;
 
   @action
   Future<void> getUser() async {
     await Future.delayed(const Duration(milliseconds: 2000), () {});
-    if (hasUser) Modular.to.navigate('start');
-    else Modular.to.navigate('login');
+
+    if (hasUser) Modular.to.navigate('/start/home');
+    else Modular.to.navigate('/login');
   }
 }

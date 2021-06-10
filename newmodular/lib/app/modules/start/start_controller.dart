@@ -13,6 +13,7 @@ abstract class _StartControllerBase with Store {
 
   @action
   void changePage(int index) {
+    
     currentPage = index;
 
     switch (index) {
