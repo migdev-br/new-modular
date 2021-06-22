@@ -15,23 +15,26 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Center(
-            child: ElevatedButton(
+      backgroundColor: Colors.grey,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('${controller.home}'),
+            ElevatedButton(
               onPressed: controller.goFlutterPage,
               child: Text('Navigate FlutterPage'),
             ),
-          ),
-          Center(
-            child: ElevatedButton(
+            ElevatedButton(
               onPressed: controller.goSubmodule,
               child: Text('Navigate SubModule'),
             ),
-          ),
-        ],
+            ElevatedButton(
+              onPressed: controller.goSub2module,
+              child: Text('Navigate Sub2Module'),
+            ),
+          ],
+        ),
       )
     );
   }

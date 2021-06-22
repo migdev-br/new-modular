@@ -15,15 +15,15 @@ class _SubPageState extends ModularState<SubPage, SubController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow,
+      backgroundColor: Colors.pink,
       appBar: AppBar(
-        title: Text('SubModule'),
+        title: Text('${controller.sub}'),
         centerTitle: true,
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: controller.goSubFlutterPage,
-          child: Text('Navigate SubFlutter Page'),
+          onPressed: controller.goSub2module,
+          child: Text('Navigate Sub2Module'),
         ),
       )
     );
